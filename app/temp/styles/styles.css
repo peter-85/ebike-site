@@ -561,7 +561,6 @@ a {
     max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1rem;
 }
 
 .wrapper--medium {
@@ -597,11 +596,15 @@ a {
         padding-right: 0;
     }
 
+.wrapper--b-margin {
+        margin-bottom: 1rem;
+    }
+
 @media (min-width: 530px) {
 
-.wrapper {
-        margin-bottom: 4rem
-}
+.wrapper--b-margin {
+            margin-bottom: 4rem
+    }
             }
 
 .page-section {
@@ -949,3 +952,25 @@ a {
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
+.site-footer {
+    padding: 0.5rem 0;
+    background-color: #2f5572;
+    text-align: center;
+    color: #FFF;
+}
+
+.site-footer__text {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 200;
+    }
+
+@media (min-width: 800px) {
+
+.site-footer__text {
+            display: inline;
+            margin-right: 1.4rem;
+            margin-bottom: 0
+    }
+            }

@@ -1,0 +1,39 @@
+{
+    {
+        #shapes
+    }
+}
+
+.icon-- {
+    {
+        base
+    }
+}
+
+{
+    width: {
+        {
+            width.outer
+        }
+    }
+    px;
+    height: {
+        {
+            height.outer
+        }
+    }
+    px;
+    background-image: url('/temp/sprite/css/svg/sprite.css-69f19c2e.svg');
+    background-position: {
+        {
+            position.relative.xy
+        }
+    }
+    ;
+}
+
+{
+    {
+        /shapes
+    }
+}
