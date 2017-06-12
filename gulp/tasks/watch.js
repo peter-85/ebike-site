@@ -19,9 +19,17 @@ gulp.task('watch', function() {
     watch('./app/assets/styles/**/*.css', function() {
         gulp.start('cssInject');
     });
+
+    watch('./app/assets/scripts/**/*.js', function() {
+        gulp.start('scriptsReload');
+    })
 });
 
-gulp.task('cssInject', ['styles'], function() {
+gulp.task('cssInject', ['styles'], function() { //['styles'] е dependuncy na cssInkect - pyrvo trqbva da zavyrshi styles i togava se izpylnqva cssInject
     return gulp.src('./app/temp/styles/styles.css')
         .pipe(browserSync.stream());
+});
+
+gulp.task('scriptsReload', ['scripts'], function() {
+    browserSync.reload();
 });
