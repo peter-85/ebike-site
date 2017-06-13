@@ -999,8 +999,12 @@ a {
 @media (min-width: 800px) {
 
 .site-header {
+        position: fixed;
         background-color: rgba(47,85,114, 0.3)
 }
+        .site-header--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
             }
 
 .site-header__btn-container {
@@ -1024,6 +1028,10 @@ a {
                 transform: translateX(-50%) scale(0.8);
         -webkit-transform-origin: 50% 0;
                 transform-origin: 50% 0;
+        -webkit-transition: -webkit-transform .6s ease-out;
+        transition: -webkit-transform .6s ease-out;
+        transition: transform .6s ease-out;
+        transition: transform .6s ease-out, -webkit-transform .6s ease-out;
     }
 
 @media (min-width: 800px) {
@@ -1034,6 +1042,10 @@ a {
                     transform: translateX(0);
             padding: 25px 36px
     }
+            .site-header--dark .site-header__logo {
+                -webkit-transform: scale(.57);
+                        transform: scale(.57);
+            }
             }
 
 .site-header__menu-logo {
@@ -1215,6 +1227,9 @@ a {
             padding: 12px 0;
             background-color: transparent
     }
+            .primary-nav a.is-current-link {
+                color: #fabb69;
+            }
             }
 
 .reveal-item {
