@@ -1,5 +1,5 @@
-let gulp = require('gulp');
-let watch = require('gulp-watch'),
+let gulp = require('gulp'),
+    watch = require('gulp-watch'),
     browserSync = require('browser-sync').create();
 
 gulp.task('watch', function() {

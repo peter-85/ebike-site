@@ -5,7 +5,7 @@ class MobileMenu {
         this.siteHeader = $('.site-header');
         this.menuIcon = $('.site-header__menu-logo');
         this.menuContent = $('.site-header__menu-content');
-        this.events();
+        this.events(); // calling the method on the creation of object which is instance of the class
     }
 
     events() {
